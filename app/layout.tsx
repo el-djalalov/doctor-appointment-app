@@ -11,8 +11,9 @@ const fontSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-	title: "Easy Arrangements",
-	description: "An app to help you arrange your doctor appointments",
+	title: "Easy Appointments",
+	description:
+		"An app to help you arrange your doctor appointments hassle free",
 };
 
 export default function RootLayout({

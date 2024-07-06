@@ -15,12 +15,12 @@ export default function Home() {
 						alt="patent"
 						width={1000}
 						height={1000}
-						className="mb-12 h-48 w-fit"
+						className="mb-12 w-[250px] lg:w-[350px]"
 					/>
 					<PatientForm />
 					<div className="text-14-regular mt-20 flex justify-between">
 						<p className="justify-items-end text-dark-600 xl:text-left">
-							© 2024 Easy Arrangements
+							© 2024 Easy Appointments
 						</p>
 
 						<Link href="/?admin=true" className="text-green-500">
