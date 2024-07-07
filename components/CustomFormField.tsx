@@ -15,7 +15,16 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Control } from "react-hook-form";
-import { FormFieldType } from "./forms/PatientForm";
+
+export enum FormFieldType {
+	INPUT = "input",
+	TEXTAREA = "textarea",
+	CHECKBOX = "checkbox",
+	PHONE_INPUT = "phoneInput",
+	DATE_PICKER = "datePicker",
+	SELECT = "select",
+	SKELETON = "skeleton",
+}
 
 interface CustomProps {
 	control: Control<any>;
@@ -42,8 +51,8 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
 						<Image
 							src={iconSrc}
 							alt={iconAlt || "icon"}
-							width={24}
-							height={24}
+							width={20}
+							height={20}
 							className="ml-2"
 						/>
 					)}
